@@ -1,0 +1,49 @@
+<!doctype>
+<html>
+	<head>
+        <script>
+               function validateForm() {
+                var x = document.forms["signup"]["RollNo"].value;
+                var y = document.forms["signup"]["Pass"].value;
+                var z = document.forms["signup"]["Address"].value;
+                var w = document.forms["signup"]["Name"].value;
+                if (x == "" || y == "" || z == "" || w == "" ) {
+                    alert("All fields must be filled out");
+                    return false;
+                }
+                else
+                    return true;
+            }
+        </script>
+		<title>	Training and Placement Cell </title>
+	</head>
+	<body style="background-color:rgb(204, 255, 204);">
+	
+		<img src="">
+
+	        <div class="tab-content">  
+         		 <h1>	Training and Placement Cell </h1>
+		</div>
+          
+	   <form action="update.jsp" name="signup" onsubmit="return validateForm()">
+ 		<table id="tableLogin">		
+			<tr>
+				<td class="field-label"><label>Roll no:</label></td>
+				<td><input class="field" type="text" name="RollNo" size="20" value="" /></td></tr>
+                        <tr>
+				<td class="field-label"><label>Address</label></td>
+				<td><input class="field" type="text" name="Address" size="20" value="" /></td></tr>
+			<tr>
+				<td class="field-label"><label>CGPA</label></td>
+				<td><input class="field" type="number" name="cgpa" min="0" step=".01" size="20" value="" /></td></tr>
+                        <tr>
+				<td class="field-label"><label>Password</label></td>
+				<td><input class="field" type="password" name="Pass" size="20" value="" /></td></tr>
+		</table>
+          	
+          	<input type="submit" class="button"/>
+          	</form>
+
+        
+      </body>
+</html>

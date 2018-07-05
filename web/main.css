@@ -1,0 +1,59 @@
+body {
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.5;
+}
+#mhead {
+    color: #00008B;
+}
+h2 {
+    margin-top: 1.3em;
+}
+#main {
+    background:#fff;color:#00BFFF;
+    font-size:20;font-style:italic;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    backface-visibility: visible;
+
+
+}
+
+li {
+    float: left;
+    font-size: 25;
+    font-family: sans-serif;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#Head {
+    background-image: url(PICT.jpg);
+    background-size: 100% 100%
+}
+
+div {
+
+}
+
+table {
+    border-color: aqua;
+}
+
+form {
+    background-color:azure;
+}

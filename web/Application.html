@@ -1,0 +1,62 @@
+<!doctype>
+<html>
+	<head>
+		<title>Application Form</title>
+        <link rel="stylesheet" href="main.css">
+	</head>
+	<body style="background-color:rgb(204, 255, 204);">
+
+
+	<div id ="Head"><br>
+        <h1 align ="center">Training and Placement Cell </h1>   
+		<div id="Bar" class="menu-bar">
+        <nav id="header-menu" class="dropdown-menu-wrap" ><br>
+		 <ul>
+                        
+             <b><li><a href="StudentHP.jsp">Home</a></li>
+		     <li><a href="Application.html">Apply to Company</a></li>
+		     <li><a href="contact.html">Contact Us</a></li>
+                 <li><a href="AboutUs.html">About Us</a></li></b>
+         </ul>
+        </nav>
+        
+        	 </div>
+        
+		<br><br><br>
+
+        </div>
+	        <form action="apply.jsp">
+ 		<table id="tableLogin" align="center">		
+			<tr>
+				<td class="field-label"><label>Company Name</label></td>
+				<td><select name="company">
+    					<option value="C1">Facebook</option>
+    					<option value="C2">Google</option>
+    					<option value="C3">Microsoft</option>
+    					<option value="C4">Amazon</option>
+ 					</select></td></tr>
+			<tr>
+				<td class="field-label"><label>Resume</label></td>
+				<td><input class="field" type="file" name="fileupload" accept="pdf/*" size="20"/></td></tr>
+		
+			<tr>
+				<td class="field-label"><label>SGPA</label></td>
+				<td><input class="field" type="text" size="20" name="sgpa" value="" /></td></tr>
+			<tr>
+				<td class="field-label"><label>Date of Application</label></td>
+				<td><input class="field" type="date" name="date" size="20"/></td></tr>
+			<tr>
+				<td class="field-label"><label>Technologies interested in</label></td>
+				<td><input class="field" type="checkbox" id="One" size="20" name="type" value="Java"/>Java</td>
+                                <td><input class="field" type="checkbox" id="One" size="20" name="type" value="Python"/>Python</td>
+				<td><input class="field" type="checkbox" id="One" size="20" name="type" value="Cpp"/>C++</td></tr>
+
+		</table>
+		<p align ="center">
+		<input type="Submit" value="Submit" align="center"/></p>
+
+          	</form>
+
+        
+      </body>
+</html>

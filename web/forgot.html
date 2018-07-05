@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form >
+  <body bgcolor=" #FFEFD5">
+  <div align="center" >
+  <b>
+  <h>  <font size="10"> Reset password </font>  <br></h>
+
+Enter email: <br>
+ <input id="textEmail"><br><br>
+Enter new password:<br>
+<input type= "password"><br><br>
+
+<!--Re-enter new password:<br>
+<input type= "password"><br><br>
+-->
+
+  <button type="button" onclick="myFunction()">Submit</button><br><br>
+
+
+
+<p id="demo" style="color: red;"></p>
+
+
+  <br></font></p>
+
+
+
+    <script>
+    function myFunction() {
+        var email;
+
+        email = document.getElementById("textEmail").value;
+
+            var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+            if (reg.test(textEmail.value) == false) 
+            {
+            document.getElementById("demo").style.color = "red";
+                document.getElementById("demo").innerHTML ="Invalid EMail ->"+ email;
+                alert('Invalid Email Address ->'+email);
+                return false;
+            } else{
+            document.getElementById("demo").style.color = "DarkGreen";      
+            document.getElementById("demo").innerHTML ="Valid Email ->"+email;
+window.location='welcome.html';
+            }
+
+       return true;
+    }
+    </script>
+
+<form action="welcome.html" method="get">
+
+
+<!--  <p><font color="black">Company:<br>
+  <input type="text" name=" company" >
+  <br></font></p> --> 
+
+ <div align="left">
+  <font size=" 4"> Address for communication :</font>  <br><br>
+
+   Placement Office <br>
+	Humanities Sciences Block (Ground Floor)<br>
+	PICT, katraj<br>
+	Pune.
+ </div> 
+
+ <div align="right">
+   <font size=" 4"> Contact us :</font>  <br><br>
+
+     - 9988776655<br>
+     - placement@pict.edu<br> <br> <br> <br> 
+ </div> 
+
+ <div align=" center">
+   <font size=" 4"> Copyright © 2017, Designed and Developed by Training and Placement Office, PICT ,Pune</font>  <br><br>
+</div>
+
+   
+
+
+
+
+
+	
+
+  
+
+
+  <b>
+  <br>
+  <br>
+
+  
+  
+</form> 
+
+<p>  </p>
+ 
+
+
+</body>
+</html>
+
+
+
+
+
+
